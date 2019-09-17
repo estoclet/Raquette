@@ -1,0 +1,27 @@
+﻿<Window x:Name="Raquette_Télescope" x:Class="AppliRaquette.FpRaquette"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AppliRaquette"
+        mc:Ignorable="d"
+        Title="Raquette Télescope" Height="350" Width="525" ResizeMode="NoResize">
+    <Grid>
+        <Rectangle Fill="#FF858585" HorizontalAlignment="Left" Height="107" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="497"/>
+        <Rectangle Fill="#FF9DA6FF" HorizontalAlignment="Left" Height="127" Margin="124,125,0,0" Stroke="Black" VerticalAlignment="Top" Width="259"/>
+        <Button x:Name="BoutInit" Content="Init Position" HorizontalAlignment="Left" Margin="26,279,0,0" VerticalAlignment="Top" Width="75" Click="BoutInit_Click"/>
+        <Button x:Name="BoutSuivi" Content="Suivi Sidéral" HorizontalAlignment="Left" Margin="407,284,0,0" VerticalAlignment="Top" Width="75" Click="BoutSuivi_Click"/>
+        <Button x:Name="BoutStop" Content="STOP" HorizontalAlignment="Left" Margin="218,182,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" Foreground="#FFD41414" Click="BoutStop_Click"/>
+        <Button x:Name="BoutADPlus" Content="AD+" HorizontalAlignment="Left" Margin="133,182,0,0" VerticalAlignment="Top" Width="75" Click="BoutADPlus_Click"/>
+        <Button x:Name="BoutADMoins" Content="AD-" HorizontalAlignment="Left" Margin="302,182,0,0" VerticalAlignment="Top" Width="75" Click="BoutADMoins_Click"/>
+        <Button x:Name="BoutDECPlus" Content="DEC+" HorizontalAlignment="Left" Margin="218,134,0,0" VerticalAlignment="Top" Width="75" Click="BoutDECPlus_Click"/>
+        <Button x:Name="BoutDECMoins" Content="DEC-" HorizontalAlignment="Left" Margin="218,223,0,0" VerticalAlignment="Top" Width="75" Click="BoutDECMoins_Click"/>
+        <Slider x:Name="VitX_Scroll" HorizontalAlignment="Left" Margin="26,25,0,0" VerticalAlignment="Top" Width="142" ValueChanged="VitX_Scroll_ValueChanged"/>
+        <Slider x:Name="VitY_Scroll" HorizontalAlignment="Left" Margin="340,25,0,0" VerticalAlignment="Top" Width="142" ValueChanged="VitY_Scroll_ValueChanged"/>
+        <Label Content="Vitesse Ascension Droite" HorizontalAlignment="Left" Margin="26,48,0,0" VerticalAlignment="Top"/>
+        <Label Content="Vitesse Déclinaison" HorizontalAlignment="Left" Margin="340,48,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TB_DeplaceX" HorizontalAlignment="Left" Height="23" Margin="37,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="TB_DeplaceY" HorizontalAlignment="Left" Height="23" Margin="351,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>
